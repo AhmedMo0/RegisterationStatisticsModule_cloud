@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
-    private static String base = "app/data/batch/";
+    private static String base = "./studentsData/";
     private static String dbFileName = "dbFile.csv";
     private static Integer studentCnt = 0;
     private static Map<String, Integer> coursesMap = new HashMap<>();
