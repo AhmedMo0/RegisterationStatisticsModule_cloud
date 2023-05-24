@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  comp1:
+    build: ./cloudAssignC1
+    volumes:
+      - ./app:/app/data/batch/studentsData:rw
+    stdin_open: true
+    tty: true
+    
+  comp2:
+    build: ./cloudAssignC2
+    volumes:
+      - ./app:/app/data/batch/studentsData:rw
+    stdin_open: true
+    tty: true
+    restart: always
+    
+
+
